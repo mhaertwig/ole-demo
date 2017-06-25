@@ -1,0 +1,41 @@
+{
+  "name": "ole.git",
+  "version": "2.0.0",
+  "description": "OpenLayers Editor 2",
+  "scripts": {
+    "build": "webpack",
+    "doc": "jsdoc -p -r -c jsdoc_conf.json src -d doc README.md",
+    "precommit": "lint-staged",
+    "start": "webpack-dev-server --progress --watch"
+  },
+  "keywords": [
+    "OpenLayers",
+    "Editor"
+  ],
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "css-loader": "^0.27.3",
+    "file-loader": "^0.11.0",
+    "husky": "^0.13.3",
+    "image-webpack-loader": "^3.3.0",
+    "jsdoc-export-default-interop": "^0.3.1",
+    "lint-staged": "^3.4.0",
+    "openlayers": "^4.0.1",
+    "prettier": "^0.22.0",
+    "style-loader": "^0.16.0",
+    "uglifyjs-webpack-plugin": "^0.4.0",
+    "url-loader": "^0.5.8",
+    "webpack": "~2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "jsdoc": "^3.4.3",
+    "mustache": "^2.3.0"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  }
+}
