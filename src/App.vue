@@ -3,9 +3,10 @@
     <div id="header">
       <nav>
         <div id="brand">OpenLayers Editor</div>
+        <a href="#/example">Demo</a>
         <a href="#/api">API</a>
-        <a href="https://github.com/geops/ole2">Code</a>
-        <a href="http://geops.de/blog"></a>
+        <a target="_blank" href="https://github.com/geops/ole2">Code</a>
+        <a target="_blank" href="http://geops.de/blog"></a>
       </nav>
     </div>
     <router-view></router-view>
@@ -26,7 +27,12 @@ body {
   margin: 0;
 }
 
-a, a:visited {
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -39,6 +45,7 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
 }
 
 #header {
@@ -49,8 +56,13 @@ a:hover {
   text-align: right;
 }
 
-#header a, #header a:visited {
+#header a {
   color: #61849c;
+  margin-right: 20px;
+}
+
+#header a:last-child {
+    margin-right: 0;
 }
 
 #brand {
