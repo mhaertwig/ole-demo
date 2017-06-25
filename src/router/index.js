@@ -3,18 +3,19 @@ import Router from 'vue-router'
 import Demo from '@/components/Demo'
 import API from '@/components/API'
 
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Demo',
+      name: 'demo',
       component: Demo
     },
     {
-      path: '/',
-      name: 'API',
+      path: '/api',
+      name: 'api',
       component: API
     }
   ]
