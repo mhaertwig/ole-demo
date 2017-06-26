@@ -3,8 +3,8 @@
     <div id="header">
       <nav>
         <div id="brand">OpenLayers Editor</div>
-        <a href="#/example">Demo</a>
-        <a href="#/api">API</a>
+        <a href="#" v-bind:class="{ active : $route.name === 'demo' }">Demo</a>
+        <a href="#/api" v-bind:class="{ active: $route.name === 'api' }">API</a>
         <a target="_blank" href="https://github.com/geops/ole2">Code</a>
         <a target="_blank" href="http://geops.de/blog"></a>
       </nav>
@@ -39,6 +39,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a.active {
+  font-weight: bold;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -58,7 +62,7 @@ a:hover {
 
 #header a {
   color: #61849c;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #header a:last-child {

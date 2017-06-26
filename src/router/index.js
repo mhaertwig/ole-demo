@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Demo from '@/components/Demo'
-import API from '@/components/API'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Demo from '@/components/Demo';
+import API from '@/components/API';
 
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -19,4 +19,4 @@ export default new Router({
       component: API
     }
   ]
-})
+});
