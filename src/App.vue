@@ -10,6 +10,12 @@
       </nav>
     </div>
     <router-view></router-view>
+
+    <div id="promo">
+      <a href="http://geops.de/karriere" target="_blank">
+        <div id="promo-text">Join the team!</div>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -77,5 +83,21 @@ a.active {
   left: 10px;
   position: absolute;
   top: 0;
+}
+
+#promo {
+  position: absolute;
+  bottom: 50px;
+  background-color: red;
+  right: -65px;;
+  transform: rotate(-45deg);
+}
+
+#promo-text {
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  margin: 2px;
+  padding: 0 70px;
 }
 </style>
